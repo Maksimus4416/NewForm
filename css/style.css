@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: -1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+body {
+  background-color: #353232;
+}
+
+.wrapper {
+  max-width: 550px;
+  margin: 0 auto;
+  color: white;
+}
+
+.form {
+  padding: 50px 0px;
+  /*@keyframes change_bg_color {
+			0%{
+				background-color: white;
+				color: #000;
+				box-shadow: 0 5px 0 rgb(0, 0, 0);
+			}
+
+			100%{
+				background-color: red;
+				color: #fff;
+				box-shadow: 0 4px 0 rgb(42, 3, 3);
+			}
+		}*/
+}
+
+.form__title {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form__item {
+  margin-bottom: 20px;
+}
+
+.form__label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form__input {
+  height: 50px;
+  width: 100%;
+  padding: 0px 20px;
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+.form__input:focus {
+  -webkit-box-shadow: 0 0 15px #fff;
+          box-shadow: 0 0 15px #fff;
+}
+
+.form__button {
+  width: 50%;
+  height: 50px;
+  border-radius: 15px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-box-shadow: 0 5px 0 black;
+          box-shadow: 0 5px 0 black;
+  /*&:hover{
+				animation-name: change_bg_color;
+				animation-duration: 1s;
+				animation-fill-mode: forwards;
+			}*/
+}
+
+.options__label {
+  font-size: 18px;
+}

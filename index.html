@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Форма</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="form">
+				<form action="#" id="form" class="form__body">
+					<h1 class="form__title">Форма</h1>
+					<div class="form__item">
+						<label for="formProduct" class="form__label">Товар/Колір:</label>
+						<input id="formProduct" type="text" name="product" class="form__input"/>
+					</div>
+					<div class="form__item">
+						<label for="formName" class="form__label">Ім'я:</label>
+						<input id="formName" type="text" name="name" class="form__input"/>
+					</div>
+					<div class="form__item">
+						<label for="formTelephoneNumber" class="form__label">Телефон:</label>
+						<input id="formTelephoneNumber" type="text" name="telephoneNumber" value="+380" class="form__input"/>
+					</div>
+					<div class="form__item">
+						<label for="formRegion" class="form__label">Область:</label>
+						<input id="formRegion" type="text" name="region" class="form__input"/>
+					</div>
+					<div class="form__item">
+						<label for="formCity" class="form__label">Місто:</label>
+						<input id="formCity" type="text" name="city" class="form__input"/>
+					</div>
+					<div class="form__item">
+						<label for="formPostOfficeNumber" class="form__label">Нова пошта:</label>
+						<input id="formPostOfficeNumber" type="text" value="Відділення №" name="postOfficeNumber" class="form__input"/>
+					</div>
+					<div class="form__item">
+						<div class="form__label">Доставка:</div>
+						<div class="options">
+							<div class="options__item">
+								<input id="formFreeDelivery" type="radio" name="Delivery" class="options__input">
+								<label for="formFreeDelivery" class="options__label">Безкоштовна</label>
+							</div>
+							<div class="options__item">
+								<input id="formPaidDelivery" type="radio" name="Delivery" class="options__input">
+								<label for="formPaidDelivery" class="options__label">За рахунок клієнта</label>
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="form__item">
+						<label for="formSumToPay" class="form__label">Сума наложеного платежу:</label>
+						<input id="formSumToPay" type="text" name="sumToPay" class="form__input"/>
+					</div>
+					<div class="form__item">
+						<label for="formAddress" class="form__label">Адреса:</label>
+						<input id="formAddress" type="text" name="address" class="form__input"/>
+					</div>
+					<button type="reset" class="form__button">Отправить</button>
+				</form>
+			</div>
+		</div>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
